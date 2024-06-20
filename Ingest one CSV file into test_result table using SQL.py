@@ -11,6 +11,11 @@
 # COMMAND ----------
 
 # MAGIC %sql
+# MAGIC LIST '/Volumes/personaldatabricks/uk_mot_results/uk_mot_data_volume/'
+
+# COMMAND ----------
+
+# MAGIC %sql
 # MAGIC COPY INTO personaldatabricks.uk_mot_results.test_result
 # MAGIC FROM '/Volumes/personaldatabricks/uk_mot_results/uk_mot_data_volume/test_result_20220531131730_32355.csv'
 # MAGIC   FILEFORMAT = CSV
